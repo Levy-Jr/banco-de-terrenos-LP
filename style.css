@@ -78,7 +78,8 @@ select {
     --fs-600: 1.875rem;
     --fs-650: 2rem;
     --fs-700: 2.25rem;
-    --fs-800: 3rem;
+    --fs-800: 2.5rem;
+    --fs-900: 3rem;
 
     --ff-primary: 'Poppins', sans-serif;
 
@@ -200,6 +201,72 @@ button {
 
 .section-land {
   background-color: var(--neutral-clr-700);
+  color: var(--neutral-clr-100);
+}
+
+@media (min-width: 50em) {
+  .section-land .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 0;
+    margin-left: auto;
+  }
+
+  .land-image-side {
+    max-width: 46.875rem;
+  }
+}
+
+.land__ul {
+  list-style: none;
+}
+
+/* section millionaire marketing */
+
+.section-millionaire-market {
+  background-color: var(--neutral-clr-900);
+  color: var(--neutral-clr-100);
+}
+
+.millionaire-market__title {
+  line-height: 1.1;
+  font-size: var(--fs-900);
+  font-weight: var(--fw-black);
+}
+
+.millionaire-market__learn {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-800);
+}
+
+.market__ul {
+  list-style-type: none;
+
+}
+
+.market__ul li {
+  border-radius: 1rem;
+  border: 3px solid var(--primary-clr-400);
+}
+
+/* section strategy */
+
+.section-strategy {
+  background-color: var(--neutral-clr-900);
+}
+
+/* section testimonials */
+
+.section-testimonials {
+  background-color: var(--neutral-clr-700);
+}
+
+/* section buy */
+
+.section-buy {
+  background-color: var(--neutral-clr-900);
+  color: var(--neutral-clr-100);
 }
 
 /* utility classes */
@@ -210,7 +277,7 @@ button {
 }
 
 .accent-clr-400 {
-    color: var(--primary-clr-400);
+  color: var(--primary-clr-400);
 }
 
 .accent-clr-500 {
@@ -218,11 +285,11 @@ button {
 }
 
 .accent-clr-600 {
-    color: var(--primary-clr-600);
+  color: var(--primary-clr-600);
 }
 
 .accent-clr-700 {
-    color: var(--primary-clr-700);
+  color: var(--primary-clr-700);
 }
 
 .d-b {
